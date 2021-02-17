@@ -1,0 +1,13 @@
+<ul class="top-menu">
+  <li>
+      <a routerLink="">Home</a>
+  </li>
+  <li>
+      <a routerLink="home">Courses</a>
+  </li>
+  <li>
+    <a [routerLink]="[{ outlets: { 'hello': ['lessons','1'] } }]">lessons Aux</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>
+<router-outlet name="hello"></router-outlet> 
